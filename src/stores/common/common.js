@@ -7,7 +7,8 @@ export const useCommonStore = defineStore('useCommon', () => {
     const value = ref(null);
     async function getList(params) {
         try {
-          const response = await $api.get(GET_URL, params);
+          const response = [];
+          // const response = await $api.get(GET_URL, params);
           value.value = response.data || []
           return response.data
         } catch (e) {

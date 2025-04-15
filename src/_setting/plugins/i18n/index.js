@@ -1,17 +1,16 @@
-import ko from '@/plugins/i18n/locales/ko.json';
+import ko from '@/_setting/plugins/i18n/locales/ko.json';
 import { createI18n } from 'vue-i18n';
 
 const defaultLocale = 'ko';
 
-const languages = {
+const messages = {
     ko: ko
 };
-
-const messages = Object.assign(languages);
 
 export const i18n = createI18n({
     legacy: false,
     locale: defaultLocale,
+    fallbackLocale: defaultLocale,
     globalInjection: true,
     missingWarn: false,
     fallbackWarn: false,
