@@ -24,6 +24,15 @@ return{
     vuetify({ autoImport: true }),
     ckeditor5({ theme: require.resolve('@ckeditor/ckeditor5-theme-lark') })
   ],
+  build: {
+    ..._buildOptions,
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  },
   resolve: {
       alias: {
           '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -40,5 +49,4 @@ return{
       }
   },
 }
-build: _buildOptions
 })
