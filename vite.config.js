@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
       }
   } : {};
 return{
-  base: process.env.BASE_URL || '/kbcard/',
+  base: '/kbcard/',
   plugins: [
     vue(),
     vuetify({ autoImport: true }),
