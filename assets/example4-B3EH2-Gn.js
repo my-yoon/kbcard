@@ -1,0 +1,10 @@
+import{r as v,g as o,e as l,f as t,i as k,a0 as d,t as n,F as C,j as f,n as p}from"./index-B6GtFO2S.js";const h={class:"guidecontent"},S={class:"guidetitle"},T=["onClick"],b=["onClick"],N={__name:"example4",props:{sampleProps:{type:Object,default:()=>{}}},setup(m){const c=v({className:"",codeSample:[{title:"HTML",sampleCodeJS:'<DatePicker ref="datepicker" :dayOpionType=state.dayOpionType  @selectDay ="selectDay" :optionsType="true"/>'},{title:"JS",sampleCodeJS:`/** 검색 박스 이벤트 처리 
+    @param {string} searchKeyWord 검색어
+*/
+const onEnterSearch = (searchKeyWord) => {
+    console.log('onEnterSearch', searchKeyWord);
+}
+const state = reactive({
+/** 피커 초기값 설정  month(1개월), month6(6개월), year(1년), week(일주일), day(당일), self(직접입력) */
+    dayOpionType: 'month'
+})`}]}),y=s=>{const e=document.getElementsByClassName("codewrap");e[s].classList.contains("up")?e[s].classList.remove("up"):e[s].classList.add("up")},u=s=>{navigator.clipboard.writeText(s).then(()=>{alert("코드가 클립보드에 복사되었습니다.")}).catch(e=>{console.error("클립보드 복사 실패:",e),alert("클립보드 복사에 실패했습니다.")})};return(s,e)=>{var r;return l(),o("div",h,[t("div",S,[d(n((r=m.sampleProps)==null?void 0:r.title)+" ",1),t("button",{type:"button",class:"btn-sample",onClick:e[0]||(e[0]=a=>s.goToPage("/boxlayout"))},"샘플페이지 보기")]),e[2]||(e[2]=k('<div class="guidememo"><div class="memotitle">검색 박스</div><ul class="memolist"><li><strong class="tagstyle">dayOpionType</strong>초기값 설정 month(1개월), month6(6개월), year(1년), week(일주일), day(당일), self(직접입력)</li><li><strong class="tagstyle">optionsType:</strong> 버튼 사용 여부 defalult:true</li><li><strong class="tagstyle">singleType:</strong> 단일사용 여부 defalult:false</li></ul></div>',1)),(l(!0),o(C,null,f(c.codeSample,(a,i)=>(l(),o("div",{class:"codewrap",key:i},[t("div",{class:p(["codetitle",c.className])},[t("span",{onClick:g=>y(i)},n(a.title),9,T),t("button",{type:"button",class:"btn btn-ss",onClick:g=>u(a.sampleCodeJS)},e[1]||(e[1]=[t("span",{class:"ico-menu"},null,-1),d(" 복사하기")]),8,b)],2),t("div",{class:p(["code",a.title])},[t("pre",null,[t("code",null,n(a.sampleCodeJS),1)])],2)]))),128))])}}};export{N as default};
