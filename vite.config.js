@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
       }
   } : {};
 return{
-  base: '/kbcard/',
+  base: '/kbcard',
   plugins: [
     vue(),
     vuetify({ autoImport: true }),
