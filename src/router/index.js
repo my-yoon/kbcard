@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createHashHistory } from 'vue-router';
 import main from '@/router/modules/main.js';
 const routes = [
     {
@@ -27,7 +27,7 @@ const routes = [
     
 ];
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createHashHistory(import.meta.env.VITE_BASE_URL),
     routes
 });
 
