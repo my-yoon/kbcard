@@ -27,7 +27,7 @@ const routes = [
     
 ];
 const router = createRouter({
-    history: createHashHistory(import.meta.env.VITE_BASE_URL),
+    history: createWebHistory(import.meta.env.VITE_BASE_URL),
     routes
 });
 

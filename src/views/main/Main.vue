@@ -21,7 +21,7 @@
             </div>
         </template>
     </SearchBox>
-    <div>수정확인</div>
+    <div>수정확인1111111</div>
     <ListTable 
         :selected="true"
         :downLoad="true"
