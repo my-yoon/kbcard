@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
       }
   } : {};
 return{
-  base: '/kbcard/',
+  base: process.env.NODE_ENV === 'production' ? '/kbcard/' : '/',
   plugins: [
     vue(),
     vuetify({ autoImport: true }),

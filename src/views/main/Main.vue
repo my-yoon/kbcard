@@ -21,6 +21,7 @@
             </div>
         </template>
     </SearchBox>
+    <div>수정확인</div>
     <ListTable 
         :selected="true"
         :downLoad="true"
@@ -39,6 +40,35 @@
         @onRegister="onRegister"
         @onDelete="onDelete"
     />
+    <div class="ui-dragdrop-menu full mt-10">
+        <ul class="ui-dragdrop-list">
+            <li class="ui-dragdrop-item">
+                <div class="ui-dragdrop-item-top10">
+                    <span class="num">1</span>
+                    <span class="ui-tag bc2">DE1560</span>
+                    <span class="subject">다음과 같은 질병으로 진단을 받았거나, 현재 약물 치료 중이십니까?</span>
+                </div>
+            </li>
+            <li class="ui-dragdrop-item active"><div class="ui-dragdrop-item-top10"><span class="num">2</span><span class="ui-tag bc2">DE1561</span><span class="subject">챌린지는 무엇인가요?</span></div></li>
+            <li class="ui-dragdrop-item"><div class="ui-dragdrop-item-top10"><span class="num">3</span><span class="ui-tag bc2">DE1562</span><span class="subject">제목입니다.</span></div></li>
+            <li class="ui-dragdrop-item"><div class="ui-dragdrop-item-top10"><span class="num">4</span><span class="ui-tag bc2">DE1563</span><span class="subject">제목입니다.</span></div></li>
+            <li class="ui-dragdrop-item"><div class="ui-dragdrop-item-top10"><span class="num">5</span><span class="ui-tag bc2">DE1564</span><span class="subject">제목입니다.</span></div></li>
+            <li class="ui-dragdrop-item"><div class="ui-dragdrop-item-top10"><span class="num">6</span><span class="ui-tag bc2">DE1565</span><span class="subject">제목입니다.</span></div></li>
+        </ul>
+    </div>
+    <div class="ui-chips">
+        <div class="ui-chips-item">
+            <span>KB카드</span>
+            <button type="button" class="ui-chips-del"><span class="offscreen">삭제하기</span></button>
+        </div>
+        <div class="ui-chips-item">
+            <span>KB손해보험</span>
+            <button type="button" class="ui-chips-del"><span class="offscreen">삭제하기</span></button>
+        </div>
+    </div>
+
+    <span class="radio"><input id="isEss1" name="isEssGroup" type="radio"><label for="isEss1">필수</label></span>
+    <span class="checkbox"><input id="isImportant" name="isImportantGroup" type="checkbox"><label for="isImportant">중요내용변경 여부(30일 전 사전공지가 필요합니다.)</label></span>
     <div class="ui-editor">
         <div id="editor" class="editor_container">
             <CKEditor :model-value="state.ctsTxt" :editor="ClassicEditor" />
