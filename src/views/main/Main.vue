@@ -1,9 +1,9 @@
 <template>
-    <!-- <div style="margin-bottom:20px;">
+     <div style="margin-bottom:20px;">
         <v-btn @click="openAlert">alert열기</v-btn>
         <v-btn @click="openSample">샘플페이지 이동</v-btn>
-        <v-btn @click="openModal">모달열기</v-btn>
-    </div> -->
+        <v-btn @click="openModal">모달열기</v-btn>s
+    </div>
 
     <SearchBox @onSearchResult="onSearchResult" @onReload="onReload">
         <template #formItem>
