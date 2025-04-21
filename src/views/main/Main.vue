@@ -25,7 +25,6 @@
             </div>
         </template>
     </SearchBox>
-    <div>수정확인qqq111</div>
     <ListTable :selected="true" :downLoad="true" :rowData="state.rowData" :totalCnt="pager.totalCnt"
         :columnDefs="state.value" :defaultColDef="state.defaultColDef" :domLayout="'autoHeight'"
         :cntPerPage="pager.size" :itemCount="pager.totalCnt" :currentPage="pager.current" :downParams="'downParams'"
